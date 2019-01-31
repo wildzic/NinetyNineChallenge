@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NinetyNineChallenge</string>
+    <string name="country">Country</string>
+    <string name="description">Description</string>
+    <string name="sharePrice">Share price</string>
+    <string name="unexpectedError">Unexpected error</string>
+    <string name="ninetyNineMobileChallenge">Ninety Nine Mobile Challenge</string>
+</resources>
