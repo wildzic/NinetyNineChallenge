@@ -1,82 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
-            android:text="@string/country"
+            android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorDarkText"
             android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/country"
             android:textSize="@dimen/_13sdp"
-            android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorDarkText"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
 
     <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:id="@+id/txtCountry"
-            android:textSize="@dimen/_13sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
-            android:textColor="@color/colorText"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
             tools:text="Spain"
-            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorText"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
 
     <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13sdp"
             android:text="@string/sharePrice"
-            android:layout_width="0dp"
             android:textSize="@dimen/_13sdp"
             android:textColor="@color/colorDarkText"
-            android:layout_marginTop="@dimen/_13sdp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3" app:layout_constraintTop_toBottomOf="@+id/txtCountry"
+            app:layout_constraintTop_toBottomOf="@+id/txtCountry"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
-    <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_13sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:id="@+id/txtSharePrice"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            tools:text="100.000"
-            android:textColor="@color/colorText"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
 
     <TextView
-            android:text="@string/description"
+            android:id="@+id/txtSharePrice"
             android:layout_width="0dp"
-            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:text="100.000"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorText"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
             android:textSize="@dimen/_13sdp"
             android:textColor="@color/colorDarkText"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2" app:layout_constraintTop_toBottomOf="@+id/txtSharePrice"
+            android:layout_marginTop="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txtSharePrice"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+
     <TextView
-            android:layout_width="0dp"
-            android:textColor="@color/colorText"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:textSize="@dimen/_13sdp"
-            android:layout_height="wrap_content"
             android:id="@+id/txtDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
             tools:text="Description of the company"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
 
-    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                          android:id="@+id/guideline2"
-                                          android:orientation="vertical"
-                                          app:layout_constraintGuide_percent="0.07"/>
-    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                          android:id="@+id/guideline3"
-                                          android:orientation="vertical"
-                                          app:layout_constraintGuide_percent="0.93"/>
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93"/>
+
 </android.support.constraint.ConstraintLayout>
