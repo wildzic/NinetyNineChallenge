@@ -8,7 +8,7 @@ import retrofit2.Call
 
 abstract class RefreshableActivity : AppCompatActivity() {
 
-    private val REFRESH_TIME = 5000L
+    private val REFRESH_TIME = 20000L
 
     private lateinit var mHandler: Handler
     private lateinit var mRunnable: Runnable
